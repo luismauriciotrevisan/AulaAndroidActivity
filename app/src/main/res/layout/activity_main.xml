@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aulaandroidactivity.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="Preencha o Formulário, Por Favor!"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/et_01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:hint="Nome"
+            android:inputType="textCapWords" />
+
+        <EditText
+            android:id="@+id/et_02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:hint="Telefone"
+            android:inputType="phone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:text="Gênero: " />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/rg_01">
+
+
+                <RadioButton
+                    android:id="@+id/rb_01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:text="F" />
+
+                <RadioButton
+                    android:id="@+id/rb_02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:text="M" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="Quais suas linguagens de programação?" />
+
+        <CheckBox
+            android:id="@+id/cb_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Java" />
+
+        <CheckBox
+            android:id="@+id/cb_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=".Net" />
+
+        <CheckBox
+            android:id="@+id/cb_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C++" />
+
+        <CheckBox
+            android:id="@+id/cb_04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C#" />
+
+        <Button
+            android:onClick="HandleButtonClick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="Resumo"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tv_01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="Resumo" />
+
+
+    </LinearLayout>
+</ScrollView>
